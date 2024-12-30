@@ -90,3 +90,5 @@ target/
 
 # develop environment 
 dev_env
+/lgbm_model.pkl
+/tfidf_vectorizer.pkl
