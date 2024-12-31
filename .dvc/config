@@ -1,4 +1,4 @@
 [core]
     remote = myremote
 ['remote "myremote"']
-    url = D:\temp
+    url = s3://anuj-yt-comment-dvc
