@@ -4,10 +4,10 @@ import json
 import mlflow
 import logging
 import os
-import config
+import src.config.dev as dev
 
 # Set up MLflow tracking URI
-mlflow.set_tracking_uri(config.tracking_uri)
+mlflow.set_tracking_uri(dev.tracking_uri)
 
 # logging configuration
 logger = logging.getLogger('model_registration')

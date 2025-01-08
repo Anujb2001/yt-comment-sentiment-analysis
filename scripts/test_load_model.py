@@ -1,10 +1,10 @@
 import mlflow.pyfunc
 import pytest
 from mlflow.tracking import MlflowClient
-import config
+import src.config.dev as dev
 
 # Set your remote tracking URI
-mlflow.set_tracking_uri(config.tracking_uri)
+mlflow.set_tracking_uri(dev.tracking_uri)
 
 @pytest.mark.parametrize("model_name, stage", [
     ("yt_chrome_plugin_model", "staging"),])

@@ -1,8 +1,8 @@
 import mlflow
 import random
-import config
+import src.config.dev as dev
 
-mlflow.set_tracking_uri(config.tracking_uri)
+mlflow.set_tracking_uri(dev.tracking_uri)
 
 with mlflow.start_run():
     mlflow.log_param("param1", random.randint(1,100))

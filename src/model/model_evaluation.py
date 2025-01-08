@@ -11,7 +11,7 @@ import os
 import matplotlib.pyplot as plt
 import seaborn as sns
 import json
-import config
+import src.config.dev as dev
 # logging configuration
 logger = logging.getLogger('model_evaluation')
 logger.setLevel('DEBUG')
@@ -126,7 +126,7 @@ def save_model_info(run_id: str, model_path: str, file_path: str) -> None:
 
 
 def main():
-    mlflow.set_tracking_uri(config.tracking_uri)
+    mlflow.set_tracking_uri(dev.tracking_uri)
 
     mlflow.set_experiment('dvc-pipeline-runs')
     
