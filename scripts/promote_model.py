@@ -1,7 +1,7 @@
 import os
 import mlflow
 import sys
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../')))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../')))
 from src.config import dev
 def promote_model():
     # Set up AWS MLflow tracking URI
