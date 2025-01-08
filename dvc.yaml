@@ -39,8 +39,9 @@ stages:
     - tfidf_vectorizer.pkl
     - data/interim/train_processed.csv
     - data/interim/test_processed.csv
+    - src/config/dev.py
     - src/model/model_evaluation.py
-    - config.py
+  
     outs:
     - experiment_info.json
 

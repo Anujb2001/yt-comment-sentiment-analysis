@@ -8,9 +8,11 @@ import mlflow.sklearn
 from sklearn.metrics import classification_report, confusion_matrix
 from sklearn.feature_extraction.text import TfidfVectorizer
 import os
+import sys
 import matplotlib.pyplot as plt
 import seaborn as sns
-import json
+import json 
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../')))
 import src.config.dev as dev
 # logging configuration
 logger = logging.getLogger('model_evaluation')
