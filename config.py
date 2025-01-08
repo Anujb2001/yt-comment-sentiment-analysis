@@ -1,0 +1,1 @@
+tracking_uri = "http://ec2-16-170-234-60.eu-north-1.compute.amazonaws.com:5000/"
