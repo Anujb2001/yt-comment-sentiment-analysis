@@ -1,6 +1,9 @@
 import mlflow.pyfunc
 import pytest
 from mlflow.tracking import MlflowClient
+import os
+import sys
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../')))
 import src.config.dev as dev
 
 # Set your remote tracking URI
