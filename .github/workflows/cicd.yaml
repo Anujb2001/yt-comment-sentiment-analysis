@@ -127,4 +127,4 @@ jobs:
       - name: Push Docker image to AWS ECR
         if: success()
         run: |
-          docker push 390844758498.dkr.ecr.us-east-1.amazonaws.com/yt-chrome-plugin:latest
+          docker push 559050252120.dkr.ecr.eu-north-1.amazonaws.com/yt-chrom-plugin:latest
