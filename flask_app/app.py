@@ -61,7 +61,7 @@ def load_model_and_vectorizer(model_name, model_version, vectorizer_path):
     vectorizer = joblib.load(vectorizer_path)  # Load the vectorizer
     return model, vectorizer
 
-# Initialize the model and vectorizer
+# Initialize the model and vectorizer and 
 model, vectorizer = load_model_and_vectorizer("yt_chrome_plugin_model", "5", "./tfidf_vectorizer.pkl")  # Update paths and versions as needed
 
 @app.route('/')
