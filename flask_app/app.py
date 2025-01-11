@@ -56,7 +56,7 @@ def load_model_and_vectorizer(model_name, model_version, vectorizer_path):
     mlflow.set_tracking_uri("http://ec2-16-170-234-60.eu-north-1.compute.amazonaws.com:5000/")  # Replace with your MLflow tracking URI
     client = MlflowClient()
     model_uri = f"models:/{model_name}/{model_version}"
-    print("model_uri is ", model_uri)
+    print("model_uri is: ", model_uri)
     model = mlflow.pyfunc.load_model(model_uri)
     vectorizer = joblib.load(vectorizer_path)  # Load the vectorizer
     return model, vectorizer
